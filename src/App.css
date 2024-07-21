@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  overflow-x: hidden;
+  background-image: url('./assets/images.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  animation: slideIn 1s ease-out;
+}
+
+.nav p {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.fh2 {
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+.mainSec {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 2rem;
+  padding: 2rem;
+  backdrop-filter: blur(5px);
 }
 
-.App-link {
-  color: #61dafb;
+.form1 {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  width: 100%;
+  padding: 3rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease-out;
 }
 
-@keyframes App-logo-spin {
+.form1 form {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.form1 form label input {
+  padding-left: 12px;
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+
+.btn {
+  padding: 0.4rem;
+  background-color: #36e736;
+  color: black;
+  font-size: larger;
+  font-weight: 500;
+  border-radius: 10px;
+  border: none;
+  margin-left: 2rem;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  box-shadow: 2px 5px 9px rgba(0, 0, 0, 0.8);
+  transform: scale(1.05);
+}
+
+.info {
+  width: 100%;
+  padding: 3rem;
+}
+
+@keyframes slideIn {
   from {
-    transform: rotate(0deg);
+    transform: translateY(-100%);
   }
   to {
-    transform: rotate(360deg);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .tab {
+    flex-direction: column;
+  }
+
+  .subtebdiv {
+    overflow-x: auto;
+    max-width: 90vw;
+  }
+
+  .form1 form {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .form1 form label {
+    font-size: large;
+  }
+
+  .btn {
+    margin: 1.5rem 2rem;
   }
 }
