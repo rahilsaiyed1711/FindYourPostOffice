@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/FindYourPostOffice/static/css/main.d1a82c6c.css",
+    "main.js": "/FindYourPostOffice/static/js/main.6d6c7062.js",
+    "static/media/images.jpeg": "/FindYourPostOffice/static/media/images.f1bd1bf5419f6153c0f1.jpeg",
+    "index.html": "/FindYourPostOffice/index.html",
+    "main.d1a82c6c.css.map": "/FindYourPostOffice/static/css/main.d1a82c6c.css.map",
+    "main.6d6c7062.js.map": "/FindYourPostOffice/static/js/main.6d6c7062.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1a82c6c.css",
+    "static/js/main.6d6c7062.js"
+  ]
+}
